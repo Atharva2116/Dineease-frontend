@@ -1,0 +1,91 @@
+/* Checkout.css */
+
+.checkout-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.checkout-details {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.checkout-details p {
+  margin: 8px 0;
+}
+
+.checkout-details hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #3085d6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #256abf;
+}
+
+.checkout-button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+/* === Responsive Form Fields === */
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* === Media Queries for Mobile === */
+@media (max-width: 768px) {
+  .checkout-container {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+
+  .checkout-title {
+    font-size: 24px;
+  }
+
+  .checkout-button {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .checkout-details {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,95 @@
+.order-now {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 45px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    color: white; /* Ensure text is readable */
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    color: orange;
+}
+  
+  .container-order {
+    display: flex;
+    height: auto;
+    width: 93%;
+    margin: auto;
+  
+    /* background:linear-gradient(black ,grey); */
+  }
+  .map {
+    flex: 2;
+    width: 130%;
+    height: 400px; /* Adjust this value to set the desired height for the map */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .order-image {
+    /* border: 5px solid transparent; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .o-image {
+    width: 35rem;
+    border-radius: 10px;
+    margin: 50px 0px 0px 0px;
+    border: transparent;
+  }
+  
+  #order-input {
+    margin-left: 5px;
+  }
+  
+  .input-text {
+    margin-top: 5rem;
+    
+  }
+  #order-input {
+    background-color: wheat;
+  
+    height: 50px;
+    width: 350px;
+    border-radius: 8px;
+    margin: 10px 20px 0px 20px;
+    padding: 5px 5px 5px 5px;
+    border: 3px solid burlywood;
+  }
+  
+  .address {
+    background-color: wheat;
+    margin: 10px 20px 8px 20px;
+    border-radius: 8px;
+    padding: 0px 15px 15px 15px;
+    width: 750px;
+    height: 150px;
+    line-height: 20px;
+    border: 3px solid burlywood;
+  }
+  #order-btn {
+    width: 150px;
+    margin: 10px 20px 18px 300px;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    color: whitesmoke;
+  }
+  #order-btn:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+    box-shadow: 0 0 12px #f0f002;
+    color: black;
+  }

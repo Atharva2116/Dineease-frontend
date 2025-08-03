@@ -1,0 +1,154 @@
+/* MenuPage.css */
+.popular {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20vh;
+}
+
+.popular .popular-heading {
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.popular .popular-heading span {
+  color: orange;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
+}
+
+.custom-col {
+  flex: 1 1 calc(20% - 20px); /* 5 items per row on large screens */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  background-color: rgb(120, 71, 3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgb(207, 237, 7);
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  color: white;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.btn-primary {
+  padding: 5px 20px;
+  margin-top: 5px;
+  border: 2px solid #e87b07;
+  background-color: rgb(172, 114, 8);
+  color: #eef5f5f1;
+}
+
+.btn-primary:hover {
+  background-color: #e87b07;
+}
+
+/* --------------------------------- */
+/* ✅ Media Queries for Responsiveness */
+/* --------------------------------- */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .custom-col {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+  }
+
+  .card-img-top {
+    height: 30vh;
+  }
+
+  .popular .popular-heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .custom-col {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
+
+  .card-img-top {
+    height: 28vh;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 4px 16px;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .custom-col {
+    flex: 1 1 100%; /* 1 item per row */
+  }
+
+  .popular .popular-heading {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 25vh;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+}

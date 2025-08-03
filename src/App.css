@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+
+body {
+  margin: 0;
+  color: rgb(22, 22, 23);
+  font-family: Arial, sans-serif;
+  /* background-color: rgb(8, 7, 7); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-section-wrapper {
+  background-color: rgb(8, 7, 7);
+  color: white; /* optional for text visibility */
+}
+
+
+#home, #about, #contact, #features,#menu {
+  padding: 20px;
+  min-height: 90vh; /* Ensures each section takes at least the full viewport height */
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps the navbar above other content */
+}
+
+
+.hr{
+  height: 10px;
+  color: orange;
+}

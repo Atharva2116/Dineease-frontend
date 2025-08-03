@@ -1,0 +1,220 @@
+/* --- Universal Styling --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Order Container --- */
+.order-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* --- Titles --- */
+.order-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.order-subtitle {
+  text-align: center;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+/* --- Cart Table --- */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #ffe5cc;
+  color: #333;
+  font-size: 1rem;
+}
+
+.cart-table td {
+  font-size: 0.95rem;
+  color: #fefefe;
+}
+
+/* --- Quantity Controls --- */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.increment-btn,
+.decrement-btn {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin: 0 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.increment-btn:hover {
+  background-color: #3085d6;
+  color: white;
+  border-color: #3085d6;
+  transform: scale(1.1);
+}
+
+.decrement-btn:hover {
+  background-color: #f44336;
+  color: white;
+  border-color: #f44336;
+  transform: scale(1.1);
+}
+
+.qty {
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* --- Totals --- */
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #f0d184;
+}
+
+.total-container .amount {
+  color: #f4e38a;
+}
+
+/* --- Form Section (Updated) --- */
+.order-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.order-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.order-form input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #e67e22;
+}
+
+/* --- Order Button --- */
+.order-button {
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+  background-color: #e67e22;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #cf711f;
+}
+
+/* --- Empty Cart --- */
+.empty-cart {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1rem;
+  padding: 50px 0;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+  .order-container {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .order-title {
+    font-size: 1.5rem;
+  }
+
+  .order-subtitle {
+    font-size: 1rem;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .quantity-controls {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .increment-btn,
+  .decrement-btn {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+
+  .total-container {
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 8px;
+  }
+
+  .order-button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}

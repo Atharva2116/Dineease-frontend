@@ -1,0 +1,105 @@
+/* auth.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.login-page {
+  background-image: url("./log_bg.png"); /* ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password-input {
+  position: relative;
+  width: 100%;
+}
+
+.password-input input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.auth-container {
+  backdrop-filter: blur(10px); /* 🎯 glass effect */
+  background-color: rgba(255, 255, 255, 0.2); /* light transparent white */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #e67e22; /* orange heading */
+}
+
+.auth-container input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-container button {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  background-color: #cf711f;
+}
+
+.auth-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
+.auth-container p a {
+  color: #e67e22;
+  text-decoration: none;
+}

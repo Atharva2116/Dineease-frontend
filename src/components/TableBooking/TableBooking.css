@@ -1,0 +1,173 @@
+/* TableBooking.css */
+
+.booking-container {
+  min-height: 100vh;
+  background: url('/assets/restaurant-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.booking-container h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.table-card {
+  backdrop-filter: blur(20px);
+  background: rgba(57, 255, 20, 0.15); /* neon-like green */
+
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+}
+
+.table-card.booked {
+  background: rgba(255, 105, 97, 0.3);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  animation: pop-in 0.3s ease-in;
+}
+
+.table-card.available {
+  animation: fade-in 0.4s ease-in;
+}
+
+.table-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.table-card button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #ffa726;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.table-card button:hover {
+  background: #fb8c00;
+}
+.booking-options {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.booking-options select {
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  min-width: 220px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.booking-options select:focus {
+  outline: none;
+  border-color: #ffa726;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px #ffa72688;
+}
+
+.booking-options option {
+  color: #000;
+  background: #fff;
+}
+.table-icon-container {
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+.table-icon {
+  width: 80px;
+  height: 80px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+
+.fancy-heading {
+  font-family: 'Playfair Display', serif; /* Modern, elegant serif font */
+  font-size: 2.8rem;
+  color: #4b2e2e;
+  text-align: center;
+  margin: 40px 0 20px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.fancy-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffae42;
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+.fancy-heading:hover {
+  transform: scale(1.02);
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

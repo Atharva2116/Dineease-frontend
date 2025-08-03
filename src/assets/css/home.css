@@ -1,0 +1,134 @@
+.home {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.35)),
+              url("../images/home.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  pointer-events: none;
+}
+
+.home .content {
+  margin-top: 130px;
+  max-width: 60rem;
+  margin-left: 70px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.home h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.home span {
+  color: #ffc107;
+  text-transform: uppercase;
+}
+
+.home p {
+  font-size: 1.9rem;
+  font-stretch: condensed;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.home .btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1rem;
+  background-color: #ffc107;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: #e0a800;
+}
+
+/* ------------------------- */
+/* ✅ Media Queries (Responsive) */
+/* ------------------------- */
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .home .content {
+    margin-left: 30px;
+    margin-top: 100px;
+    max-width: 90%;
+  }
+
+  .home h3 {
+    font-size: 3rem;
+  }
+
+  .home p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .home .btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 56.25%; /* Scales base font to 9px (14px * 0.625) */
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home .content {
+    margin-left: 20px;
+    margin-top: 80px;
+    max-width: 90%;
+    padding-right: 10px;
+  }
+
+  .home h3 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.4rem;
+    padding: 0.8rem 0;
+  }
+
+  .home .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

@@ -1,0 +1,74 @@
+/* Card.css */
+.card {
+  border: 1px solid #e3e3e3;
+  /* border-radius: 0.25rem; */
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 18rem; /* Set a fixed width for uniformity */
+  margin: 1rem auto; /* Center the card and add space around it */
+
+}
+
+.card-body:hover {
+  
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  
+
+  padding: 8px;
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  height: 12rem; 
+  object-fit: cover; 
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+  
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: darkorange;
+  margin-bottom: 0.5rem; /* Add some space below the title */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem; /* Add some space below the text */
+}
+
+
+.btn{
+  padding: 5px 20px;
+  margin-top: 1px;
+  border: 2px solid #e87b07;
+  text-decoration: none;
+  color: #eef5f5f1;
+  background-color: rgb(172, 114, 8);
+}
+.btn:hover{
+  border: 2px solid #e87b07;
+  text-decoration: none;
+  color: #eef5f5f1;
+  background-color: rgb(172, 114, 8);
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}

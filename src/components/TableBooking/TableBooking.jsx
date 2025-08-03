@@ -12,7 +12,7 @@ const TableBooking = () => {
 
   const fetchTables = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/tables");
+      const res = await axios.get("https://dineease-backend-green.vercel.app/api/tables");
       setTables(res.data);
     } catch (error) {
       console.error("Error fetching tables", error);

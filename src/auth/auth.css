@@ -1,4 +1,14 @@
 /* auth.css */
+.register-link {
+  color: #e67e22; /* change this to your preferred color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
 
 body {
   margin: 0;

@@ -72,15 +72,15 @@ const Login = () => {
 
           <button type="submit">Login</button>
         </form>
-<p>
+{/* <p>
   Don't have an account? <Link to="/register">Register</Link>
-</p>
+</p> */}
 
 
 
-{/*         <p>
+        <p>
           Don't have an account? <a href="/register">Register</a>
-        </p> */}
+        </p>
       </div>
     </div>
   );

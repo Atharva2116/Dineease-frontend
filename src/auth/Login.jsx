@@ -73,14 +73,9 @@ const Login = () => {
           <button type="submit">Login</button>
         </form>
         <p>
-  Don't have an account?{" "}
-  <span
-    onClick={() => navigate("/register")}
-    style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}
-  >
-    Register
-  </span>
+  Don't have an account? <Link to="/register">Register</Link>
 </p>
+
 
 {/*         <p>
           Don't have an account? <a href="/register">Register</a>

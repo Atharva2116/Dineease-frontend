@@ -1,11 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+nav {
+  background-color: black;
+  /* Remove fixed height so it can expand */
+  min-height: 100px;
+}
 
+.navbar-brand img {
+  margin-left: 50px;
+  margin-top: 5px;
+  height: 90px;
+  width: auto;
+}
+
+/* Desktop nav alignment */
+.navbar-nav {
+  margin-left: 300px;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-item {
+  color: goldenrod;
+  text-align: center;
+  padding: 10px;
+  font-size: larger;
+}
+
+.navfont {
+  color: white;
+}
+
+.navfont:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.navbar-hr {
+  border: none;
+  height: 2px;
+  background-color: orange;
+  margin-top: 10px;
+}
+
+/* Profile dropdown adjustments */
 .profile-dropdown {
   margin-left: 10px;
 }
 
 .profile-dropdown .dropdown-toggle::after {
-  display: none; /* Hide the arrow beside the icon */
+  display: none;
 }
 
 .profile-icon {
@@ -21,55 +63,24 @@
 
 .profile-icon:hover {
   transform: scale(1.1);
-  color: #ffc107; /* Bootstrap warning color (gold/yellow) */
+  color: #ffc107;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* 📱 Mobile view fixes */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 0; /* Remove large offset */
+    align-items: flex-start; /* Stack vertically */
+    text-align: left;
+  }
 
+  nav {
+    min-height: auto; /* Let it grow with menu */
+  }
 
-nav {
-    background-color: black;
-    height: 100px;
-
-
-}
-
-.navbar-brand img {
-    margin-left: 50px;
-    margin-top: 5px;  /* Adjust the margin as needed */
-    height: 90px;      /* Set the desired height */
-    width: auto;       /* Set width to auto to maintain aspect ratio */
-   
-}
-
-
-.navbar-nav{
-    margin-left: 300px;
-    align-items: center;
-    text-align: center;
-}
-.nav-item{
-    color: goldenrod;
-    text-align: center;
-    padding: 10px;
-    font-size: larger;
-}
-
-
-.navfont{
-    color: white;
-}
-
-.navfont:hover{
-    color: goldenrod;
-    text-decoration: underline;
-
-}
-
-
-.navbar-hr {
-    border: none;
-    height: 2px;
-    background-color: orange;
-    margin-top: 10; /* Adjust as needed */
+  .navbar-brand img {
+    margin-left: 0;
+    height: 70px;
+  }
 }

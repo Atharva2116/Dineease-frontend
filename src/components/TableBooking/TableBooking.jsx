@@ -30,7 +30,7 @@ const handleBooking = async (id) => {
 
   try {
     console.log("Booking table:", id, "with", selectedTime, duration);
-    await axios.put(`http://localhost:5000/api/tables/${id}/book`, {
+    await axios.put(`https://dineease-backend-green.vercel.app/api/tables/${id}/book`, {
       time: selectedTime,
       duration,
     });
@@ -43,7 +43,7 @@ const handleBooking = async (id) => {
 
   const handleCancel = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/tables/${id}/cancel`);
+      await axios.put(`https://dineease-backend-green.vercel.app/api/tables/${id}/cancel`);
       fetchTables();  // Refresh after cancellation
     } catch (error) {
       console.error("Error cancelling booking", error);
